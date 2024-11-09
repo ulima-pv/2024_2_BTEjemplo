@@ -5,11 +5,6 @@ using UnityEditor.PackageManager;
 using UnityEngine;
 namespace  ULima.BehaviorTree
 {
-    public interface IStrategy
-    {
-        Node.Status Process();
-        void Reset();
-    }
     public class Leaf : Node
     {
         private IStrategy m_Strategy;
